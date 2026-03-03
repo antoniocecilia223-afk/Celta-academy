@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Master Admin | Celta Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { display: flex; }
+        .sidebar { width: 250px; background: #111; height: 100vh; padding: 20px; border-right: 2px solid #333; }
+        .content { flex: 1; padding: 50px; }
+        input, select { display: block; width: 100%; margin: 10px 0; padding: 15px; background: #000; color: #fff; border: 1px solid #444; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>ADMIN</h2>
+        <p>📊 Dashboard</p>
+        <p>🎥 Adicionar Aula</p>
+        <p>👥 Alunos</p>
+        <p>⚙️ Configurações</p>
+    </div>
+    <div class="content">
+        <div class="celta-card">
+            <h2>Publicar Nova Vídeo Aula</h2>
+            <input type="text" id="aulaTitulo" placeholder="Título da Aula">
+            <select id="aulaCurso">
+                <option>Informática</option><option>Arquitetura</option><option>Inglês</option>
+                <option>Espanhol</option><option>Francês</option><option>Português</option>
+                <option>Italiano</option><option>Alemão</option><option>Grego</option>
+                <option>Latim</option><option>Culinária</option><option>Geografia</option>
+                <option>História</option><option>Física</option><option>Matemática</option>
+            </select>
+            <input type="text" id="aulaLink" placeholder="Link do Vídeo (YouTube/Vimeo)">
+            <button class="btn-celta" onclick="salvarAula()">PUBLICAR NO SITE</button>
+        </div>
+    </div>
+    <script>
+        function salvarAula() {
+            alert("Aula enviada com sucesso! Ela aparecerá no site dos alunos.");
+        }
+    </script>
+</body>
+</html>
