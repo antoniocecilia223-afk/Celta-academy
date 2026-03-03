@@ -1,0 +1,72 @@
+:root {
+    --dark: #050505;
+    --card: #121212;
+    --metal: linear-gradient(180deg, #e0e0e0 0%, #757575 100%);
+    --accent: #cfcfcf;
+}
+
+body {
+    background-color: var(--dark);
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+.promo-bar {
+    background: #1a1a1a;
+    border-bottom: 1px solid #333;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+header {
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid #222;
+}
+
+header h1 span { color: #888; font-weight: 300; }
+
+.grid-cursos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+.celta-card {
+    background: var(--card);
+    border: 1px solid #222;
+    padding: 25px;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.4s;
+}
+
+.celta-card:hover {
+    border-color: #7a7a7a;
+    transform: translateY(-5px);
+}
+
+.vagas-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #d32f2f;
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 2px;
+}
+
+.btn-celta {
+    background: var(--metal);
+    color: #000;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor: pointer;
+}
